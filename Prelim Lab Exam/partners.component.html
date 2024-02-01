@@ -1,0 +1,32 @@
+<br><br><br>
+
+<div class="col-lg-8" style="background-color: rgba(233, 125, 1, 0.351);">
+	<div *ngFor=" let item of ['Rymbrent, Louis, Macam, Crisjohn, Reuben, Patrick']">
+        	<p><b>{{item}}</b></p>
+	</div>
+        
+	<div *ngIf="showText">
+        	<div class="container"> 
+                	<br><br>
+                 	<table class="table table-bordered" border = "1" style="color: white;"> 
+                        	<thead> 
+                       			<tr> 
+                                            <th>Name</th> 
+                                            <th>Age</th> 
+                                            <th>Role</th> 
+                                        </tr> 
+                                 </thead> 
+                        		<tbody> 
+                                        <tr *ngFor="let user of staff"> 
+                                        <td>{{user.Name}}</td> 
+                                        <td>{{user.age}}</td> 
+                                        <td>{{user.role}}</td> 
+                                      	</tr> 
+                                        </tbody> 
+                        </table> 
+                 </div> 
+        </div>             
+        <p style="color: white;">{{roles}}</p>
+        <button (click)="toggleText()" class="toggle-button">
+            {{showText ? 'Hide Partners' : 'Show Partners'}}
+          </button>
