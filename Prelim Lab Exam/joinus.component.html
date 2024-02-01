@@ -1,0 +1,42 @@
+<div>
+    <br><br><br><br><br><br>
+    <h2>Fill up here:</h2>
+  
+    <form (ngSubmit)="submitForm()">
+      <!-- First Name -->
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" [(ngModel)]="formData.firstName" class="form-control" required>
+      </div>
+  
+      <!-- Last Name -->
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" [(ngModel)]="formData.lastName" class="form-control" required>
+      </div>
+
+  
+      <!-- Email Address -->
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="formData.email" class="form-control" required>
+      </div>
+  
+      <!-- Order -->
+      <div class="form-group">
+        <label for="order">Order:</label>
+        <textarea id="order" name="order" [(ngModel)]="formData.order" class="form-control" required></textarea>
+      </div>
+  
+    </form>
+
+    <br><br>
+  
+    <p style="color: white;">First Name: {{ formData.firstName }}</p>
+    <p style="color: white;">Last Name: {{ formData.lastName }}</p>
+    <p style="color: white;">Email Address: {{ formData.email }}</p>
+    <p style="color: white;">Order: {{ formData.order }}</p>
+  </div>
+  
+
+  
