@@ -1,0 +1,16 @@
+h1{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 100;
+}
+p,.json{
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: rgb(255, 255, 255);
+    text-indent: 2%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.line{
+    float: left;
+}
+
