@@ -1,0 +1,88 @@
+<h1>Text Format Pipes</h1>
+<hr class="line" style="width: 250px">
+<br>
+
+  <div>
+    <p>{{ title | uppercase }}</p>
+    <p>{{ title | lowercase }}</p>
+  </div>
+
+<hr>
+
+<h1>Date Pipes</h1>
+<hr class="line" style="width: 250px">
+<br>
+
+  <div> 
+    <p>Today's date :- {{ presentDate }}</p>
+    <p>Short Date: {{ presentDate | date: 'shortDate' }} </p>
+    <p>Meduim Date: {{ presentDate | date: 'mediumDate' }}</p>
+    <p>Long Date: {{ presentDate | date: 'longDate' }}</p>
+  </div>
+
+<hr />
+
+<h1>Currency Pipes</h1>
+<hr class="line" style="width: 250px">
+<br>
+
+  <div>
+    <p>{{ x | currency }}</p>
+    <p>{{x | currency:'EUR':'code'}}</p>
+    <p>{{x | currency:'PHP':'symbol':'4.2-3':'en'}}</p>
+  </div>
+
+<hr />
+
+
+<h1>Decimal Pipes</h1>
+<hr class="line" style="width: 250px">
+<br>
+
+  <div>
+    <p>{{y | number: '2.0-1'}}</p>
+    <p>{{y | number: '1.0-0'}}</p>
+    <p>{{-y | number:'1.0-0'}}</p>
+  </div>
+
+<hr />
+
+<h1>JSON Pipes</h1>
+<hr class="line" style="width: 250px">
+<br>
+
+  <div class="json"> 
+  1. ngNonBindable>{{ jsonData }} (1) <br>
+  2. {{ jsonData }} <br>
+  3. ngNonBindable>{{ jsonData | json }} <br>
+  4. {{ jsonData | json }}
+  </div>
+
+<hr/>
+
+<h1>Percent Pipes</h1>
+<hr class="line" style="width: 250px">
+<br>
+
+  <div>
+    <p>A: {{ a | percent }}</p>
+    <p>B: {{ b | percent: '4.3-5' }}</p>
+  </div>
+
+<hr />
+
+<h1>Slice Pipes</h1>
+<hr class="line" style="width: 250px">
+<br>
+
+  <div>
+    <p>{{ str }}[0:4]: '{{ str | slice: 0 : 4 }}'</p>
+    <p>{{ str }}[-4]: '{{ str | slice: -4 }}'</p>
+    <p>{{ str }}[-100]: '{{ str | slice: -100 }}'</p>
+  </div>
+
+<hr />
+
+
+
+
