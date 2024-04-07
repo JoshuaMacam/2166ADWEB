@@ -1,0 +1,22 @@
+<h1 style="color: #000000;">Top Twice Song</h1>
+
+<div class="pick" style="background-color: #0f0093;">
+    <label id="example-radio-group-label" style="color: white;">Choose your fave twice song</label>
+    <mat-radio-group
+      aria-labelledby="example-radio-group-label"
+      class="example-radio-group"
+      [(ngModel)]="twicesong"
+      (change)="showSnackbar()">
+      <mat-radio-button *ngFor="let twice of twice" class="example-radio-button" [value]="twice" style="color: white;">
+        {{twice}}
+      </mat-radio-button>
+    </mat-radio-group>
+    <div style="color: white;">Your favorite twice is: <span class="selected-twice">{{ twicesong }}</span></div>
+</div>
+
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile><img src="https://m.media-amazon.com/images/M/MV5BOGEwNzE4OTAtOGVhOS00NzE5LWIxMDYtMGE3OTlmMWQyMGNhXkEyXkFqcGdeQXVyNDY5MjMyNTg@._V1_.jpg" alt="Image 1"></mat-grid-tile>
+    <mat-grid-tile><img src="https://thebiaslistcom.files.wordpress.com/2019/04/twice-fancy.jpg" alt="Image 2"></mat-grid-tile>
+    <mat-grid-tile><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS5s9xbtlngaamsxoh4DIdKjEAH7bUW4n1T-SP7SZ2kg&s" alt="Image 3"></mat-grid-tile>
+    <mat-grid-tile><img src="https://images.genius.com/324acb2792e1aec593b539054faab2ea.1000x1000x1.png" alt="Image 4"></mat-grid-tile>
+</mat-grid-list>

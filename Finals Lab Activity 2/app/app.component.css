@@ -1,0 +1,36 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6495ED; /* Blue background */
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #8B4513; /* Brown text */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ADD8E6; /* Light blue background on hover */
+  color: #8B4513; /* Brown text on hover */
+}
+
+div.a {
+  text-align: center;
+}
+
+h1 {
+  background-color: #8B4513; /* Brown background */
+  color: #6495ED; /* Blue text */
+  font-size: larger;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
