@@ -1,0 +1,72 @@
+/* app.component.css */
+
+.container {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    padding: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    margin-right: 10px;
+    padding: 8px;
+    background-color: #fff; /* White background for input */
+    color: #333; /* Dark text color */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+.input-container button {
+    padding: 8px 20px; /* Increased padding for button */
+    background-color: #333; /* Dark background for button */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+}
+
+.book-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.book-table th, .book-table td {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 10px;
+}
+
+.book-table td {
+    text-align: center; /* Align text and buttons to center */
+}
+
+.book-table td button {
+    margin-right: 5px; /* Reduced margin between buttons */
+}
+
+.no-books {
+    color: #333; /* Dark text color */
+    margin-top: 10px;
+}
+
+.edit-container {
+    margin-top: 10px;
+}
+
+.edit-container input {
+    margin-right: 10px;
+    padding: 8px;
+    background-color: #fff; /* White background for input */
+    color: #333; /* Dark text color */
+    border: 1px solid #ccc; /* Light gray border */
+}
+
+.edit-container button {
+    margin-right: 10px; /* Add margin between buttons */
+    padding: 8px 20px; /* Increased padding for button */
+    background-color: #333; /* Dark background for button */
+    color: #fff; /* White text color */
+    border: none;
+    cursor: pointer;
+}
